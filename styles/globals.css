@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'mussels-stencil';
+  src: url('/font/mussels-stencil-medium.ttf');
+}
