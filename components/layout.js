@@ -6,15 +6,15 @@ export default function Layout({ children }) {
   function backgroundRender(path) {
     if (path == '/') {
       return (
-        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="http://139.59.117.210/omg-website/video/index.mp4" autoPlay muted loop></video>
+        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="/video/index.mp4" autoPlay muted loop></video>
       )
     } else if (path == '/about') {
       return (
-        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="http://139.59.117.210/omg-website/video/about.mov" autoPlay muted loop></video>
+        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="/video/about.mp4" autoPlay muted loop></video>
       )
     } else if (path == '/contact') {
       return (
-        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="http://139.59.117.210/omg-website/video/contact.mp4" autoPlay muted loop></video>
+        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="/video/contact.mp4" autoPlay muted loop></video>
       )
     } else if (path == '/gameplay') {
       return (
