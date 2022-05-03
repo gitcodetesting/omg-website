@@ -1,7 +1,23 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function Header({ position }) {
+export default function Header({ position, scrollSnap }) {
+  let location = 'home'
+
+  if (scrollSnap) {
+    const tmp = scrollSnap.current.scrollHeight / position
+
+    if (tmp >= scrollSnap.current.scrollHeight) {
+      location = 'home'
+    } else if (tmp >= 3) {
+      location = 'about'
+    } else if (tmp >= 2) {
+      location = 'contact'
+    } else {
+      location = 'gameplay'
+    }
+  }
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-5 pt-10 flex flex-wrap justify-between">
@@ -14,7 +30,7 @@ export default function Header({ position }) {
           <ul className="flex md:text-3xl text-xl font-mussels-stencil" style={{color: '#6e6e6e'}}>
             <li>
               <Link href="#about">
-                <a style={'' == '/about' ? {color: '#f35714'} : {}}>About</a>
+                <a style={location == 'about' ? {color: '#f35714'} : {}}>About</a>
               </Link>
             </li>
             <li>
@@ -22,7 +38,7 @@ export default function Header({ position }) {
             </li>
             <li>
               <Link href="#contact">
-                <a style={'' == '/contact' ? {color: '#f35714'} : {}}>Contact</a>
+                <a style={location == 'contact' ? {color: '#f35714'} : {}}>Contact</a>
               </Link>
             </li>
             <li>
@@ -30,7 +46,7 @@ export default function Header({ position }) {
             </li>
             <li>
               <Link href="#gameplay">
-                <a style={'' == '/gameplay' ? {color: '#f35714'} : {}}>Gameplay</a>
+                <a style={location == 'gameplay' ? {color: '#f35714'} : {}}>Gameplay</a>
               </Link>
             </li>
           </ul>
