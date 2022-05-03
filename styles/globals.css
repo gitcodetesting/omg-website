@@ -6,3 +6,25 @@
   font-family: 'mussels-stencil';
   src: url('/font/mussels-stencil-medium.ttf');
 }
+
+body {
+  background-color: black;
+}
+
+.scroll-snapping {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: none;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.scroll-snapping > div {
+  flex: none;
+  height: 100%;
+  scroll-snap-align: center;
+  width: 100%;
+}

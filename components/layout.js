@@ -1,33 +1,16 @@
 import Head from 'next/head'
 import Header from '@components/header'
-import { useRouter } from 'next/router';
+import { useState } from 'react'
 
 export default function Layout({ children }) {
-  function backgroundRender(path) {
-    if (path == '/') {
-      return (
-        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="/video/index.mp4" autoPlay muted loop></video>
-      )
-    } else if (path == '/about') {
-      return (
-        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="/video/about.mp4" autoPlay muted loop></video>
-      )
-    } else if (path == '/contact') {
-      return (
-        <video className="fixed top-0 right-0 bottom-0 left-0 -z-10 w-full" src="/video/contact.mp4" autoPlay muted loop></video>
-      )
-    } else if (path == '/gameplay') {
-      return (
-        <div className="fixed top-20 right-0 bottom-0 left-0 -z-10" style={{backgroundImage: 'url(/gameplay.jpg)', backgroundSize: 'cover', backgroundPosition: 'top center'}}></div>
-      )
-    }
-  }
+  const [position, setPosition] = useState(0)
 
-  const router = useRouter()
+  function handleScroll(event) {
+    setPosition(event.target.scrollTop)
+  }
 
   return (
     <>
-      { backgroundRender(router.pathname) }
       <Head>
         <title>OMG Website</title>
         <link rel="icon" href="/favicon.ico" />
@@ -35,10 +18,10 @@ export default function Layout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
       </Head>
-      <Header />
-      <main className="container mx-auto">
-        {children}
-      </main>
+      <Header position={ position } />
+      <div className="scroll-snapping" onScroll={ handleScroll }>
+        { children }
+      </div>
     </>
   )
 }
