@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </div>
       <video className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/index.mp4" autoPlay muted loop></video>
-      <div className="container h-full py-20 px-5 mx-auto mt-5 flex md:justify-end justify-center md:items-start items-center">
+      <div className="container h-full py-20 px-5 mx-auto mt-5 flex md:justify-end justify-center md:items-start items-end">
         <div className="mr-2">
           <Link href="#">
             <a>
