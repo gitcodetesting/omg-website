@@ -26,7 +26,7 @@ export default function Contact() {
             </Link>
           </li>
           <li>
-            <Link href="https://discord.gg/dVKkFDXJ"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1"><Discord fill="#000000" width={30} height={30} />
+            <Link href="https://discord.gg/dXFakRsqfe"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1"><Discord fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
