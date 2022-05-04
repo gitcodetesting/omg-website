@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function About() {
   return (
     <div id="about" className="relative overflow-hidden">
-      <div className="absolute top-0 right-0 bottom-0 left-0">
+      <div className="absolute top-30 right-0 bottom-0 left-0">
         <div className="container mx-auto p-5">
           <Link href="#home">
             <a>
