@@ -20,13 +20,13 @@ export default function Header({ position, scrollSnap }) {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto px-5 pt-10 flex flex-wrap justify-between">
+      <div className="container mx-auto px-5 pt-10 max-h-24 flex flex-wrap justify-between">
         <Link href="#home">
           <a className="opacity-0 md:w-auto w-full">
             <Image src='/logo-sm.png' width={225} height={87} />
           </a>
         </Link>
-        <nav className="md:w-auto w-full md:p-0 pt-20 pl-6 transition-all" style={position > 0 ? {padding: 0} : {}}>
+        <nav className="md:w-auto w-full md:p-0 pt-20 pl-6 transition-all h-0" style={position > 0 ? {padding: 0} : {}}>
           <ul className="flex md:text-3xl text-xl font-mussels-stencil" style={{color: '#6e6e6e'}}>
             <li>
               <Link href="#about">
