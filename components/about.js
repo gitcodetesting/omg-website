@@ -20,9 +20,8 @@ export default function About() {
           <p className="mb-5">You find yourself in the near future, Starships have brought thousands of people to Mars. Now civilisation takes its first steps into a Martian future, The new generation of Martians now yearns for independence from Earth.</p>
           <p className="mb-5">The United Republics of Mars is an Earth based corporation and the the only quasi official government body on Mars a military arm to enforce its monopoly on inter-planetary transport.</p>
           <p className="mb-5">Play the game, forge the future of Mars and you shall be rewarded with:</p>
-          <p className="mb-5">Dogecoin,</p>
-          <p className="mb-5">Land,</p>
-          <p className="mb-5">Citizenship.</p>
+          <p className="mb-5"></p>
+          <p className="mb-5">Dogecoin, Land, Citizenship.</p>
         </div>
       </div>
     </div>
