@@ -13,7 +13,7 @@ export default function About() {
           </Link>
         </div>
       </div>
-      <gif className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/about.gif" autoPlay muted loop></gif>
+      <img className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/about.gif" autoPlay muted loop></img>
       <div className="absolute top-60 right-0 left-0">
         <div className="text-center text-white md:text-2xl max-w-2xl mx-auto font-poppins px-5">
           <p className="mb-5">Occupy Mars Games is near future gaming.</p>
