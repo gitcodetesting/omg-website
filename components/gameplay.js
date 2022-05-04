@@ -14,7 +14,7 @@ export default function GamePlay() {
         </div>
       </div>
       <div className="absolute md:top-32 top-48 right-0 bottom-0 left-0 -z-10" style={{backgroundImage: 'url(/gameplay.jpg)', backgroundSize: 'cover', backgroundPosition: 'top center'}}></div>
-      <div className="flex justify-center items-center h-full mt-32">
+      <div className="flex justify-center items-center h-full mt-16">
         <Link href="#">
           <a>
             <div className="relative">
