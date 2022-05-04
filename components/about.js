@@ -14,7 +14,7 @@ export default function About() {
         </div>
       </div>
       <img className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/about.gif" autoPlay muted loop></img>
-      <div className="absolute top-60 right-0 left-0">
+      <div className="absolute top-20 right-0 left-0">
         <div className="text-center text-white md:text-2xl max-w-2xl mx-auto font-poppins px-5">
           <p className="mb-5">Gamers of Earth, Mars is calling you!</p>
           <p className="mb-5">You find yourself in the near future, Starships have brought thousands of people to Mars, the first wave of exploration and pioneers is over, we are now world building.</p>
