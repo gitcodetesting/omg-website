@@ -9,9 +9,9 @@ export default function Header({ position, scrollSnap }) {
 
     if (tmp >= scrollSnap.current.scrollHeight) {
       location = 'home'
-    } else if (tmp >= 3) {
+    } else if (tmp >= 2.9) {
       location = 'about'
-    } else if (tmp >= 2) {
+    } else if (tmp >= 1.9) {
       location = 'contact'
     } else {
       location = 'gameplay'
