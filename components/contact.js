@@ -8,7 +8,7 @@ import Instagram from '@components/svg/instagram'
 export default function Contact() {
   return (
     <div id="contact" className="relative overflow-hidden">
-      <div className="absolute top-0 right-0 bottom-0 left-0">
+      <div className="absolute top-0 right-0 left-0">
         <div className="container mx-auto px-5 pt-5 h-24">
           <Link href="#home">
             <a>
@@ -21,23 +21,23 @@ export default function Contact() {
       <div className="container md:pt-24 pt-48 px-5 mx-auto">
         <ul className="flex md:items-center justify-end">
           <li>
-            <Link href="https://t.me/occupymarsgames"><a className="block rounded-full p-2 bg-gray-50 hover:bg-white"><Telegram fill="#000000" width={30} height={30} />
+            <Link href="https://t.me/occupymarsgames"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100"><Telegram fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="https://discord.gg/dXFakRsqfe"><a className="block rounded-full p-2 bg-gray-50 hover:bg-white ml-1"><Discord fill="#000000" width={30} height={30} />
+            <Link href="https://discord.gg/dXFakRsqfe"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1"><Discord fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="http://twitter.com/occupymarsgames"><a className="block rounded-full p-2 bg-gray-50 hover:bg-white ml-1"><Twitter fill="#000000" width={30} height={30} />
+            <Link href="http://twitter.com/occupymarsgames"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1"><Twitter fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
           <li>
             <Link href="#">
-              <a className="block rounded-full p-2 bg-gray-50 hover:bg-white ml-1">
+              <a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1">
                 <Instagram fill="#000000" width={30} height={30} />
               </a>
             </Link>
