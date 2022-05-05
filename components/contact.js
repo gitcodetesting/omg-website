@@ -17,27 +17,21 @@ export default function Contact() {
           </Link>
         </div>
       </div>
-      <video className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/contact.mp4" autoPlay muted loop></video>
+      <img className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/contact.gif" autoPlay muted loop></img>
       <div className="container md:pt-24 pt-48 px-5 mx-auto">
         <ul className="flex md:items-center justify-end">
           <li>
-            <Link href="#">
-              <a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100">
-                <Telegram fill="#000000" width={30} height={30} />
+            <Link href="https://t.me/occupymarsgames"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100"><Telegram fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#">
-              <a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1">
-                <Discord fill="#000000" width={30} height={30} />
+            <Link href="https://discord.gg/dXFakRsqfe"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1"><Discord fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#">
-              <a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1">
-                <Twitter fill="#000000" width={30} height={30} />
+            <Link href="http://twitter.com/occupymarsgames"><a className="block rounded-full p-2 bg-white opacity-50 hover:opacity-100 ml-1"><Twitter fill="#000000" width={30} height={30} />
               </a>
             </Link>
           </li>
