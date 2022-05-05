@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Swal from 'sweetalert2'
 
 export default function Home() {
   return (
@@ -17,14 +18,22 @@ export default function Home() {
       <div className="container md:pt-20 pt-60 px-5 mx-auto flex justify-end mt-5">
         <div className="mr-2">
           <Link href="#">
-            <a className="block" onClick={ e => alert('We\'re currently running private beta with the first 1,000 users. Please join our discord/telegram community to be added in the subsequent rollouts.') }>
+            <a className="block" onClick={ e => Swal.fire({
+              title: 'We\'re currently running private beta with the first 1,000 users. Please join our discord/telegram community to be added in the subsequent rollouts.',
+              icon: 'warning',
+              confirmButtonColor: '#f8bb86'
+            }) }>
               <Image src="/appstore.svg" width={128} height={50} />
             </a>
           </Link>
         </div>
         <div>
           <Link href="#">
-            <a className="block" onClick={ e =>  alert('We\'re currently running private beta with the first 1,000 users. Please join our discord/telegram community to be added in the subsequent rollouts.') }>
+            <a className="block" onClick={ e => Swal.fire({
+              title: 'We\'re currently running private beta with the first 1,000 users. Please join our discord/telegram community to be added in the subsequent rollouts.',
+              icon: 'warning',
+              confirmButtonColor: '#f8bb86'
+            }) }>
               <Image src="/googleplay.svg" width={128} height={50} />
             </a>
           </Link>
