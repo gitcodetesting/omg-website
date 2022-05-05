@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div id="contact" className="relative overflow-hidden">
       <div className="absolute top-0 right-0 bottom-0 left-0">
-        <div className="container mx-auto p-5">
+        <div className="container mx-auto px-5 pt-5 h-24">
           <Link href="#home">
             <a>
               <Image src='/logo-sm.png' width={225} height={87} />
