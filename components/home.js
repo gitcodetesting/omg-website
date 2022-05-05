@@ -17,14 +17,14 @@ export default function Home() {
       <div className="container md:pt-20 pt-60 px-5 mx-auto flex justify-end mt-5">
         <div className="mr-2">
           <Link href="#">
-            <a>
+            <a className="block" onClick={ alert('We’re currently running private beta with the first 1,000 users. Please join our discord/telegram community to be added in the subsequent rollouts.') }>
               <Image src="/appstore.svg" width={128} height={50} />
             </a>
           </Link>
         </div>
         <div>
           <Link href="#">
-            <a>
+            <a className="block" onClick={ alert('We’re currently running private beta with the first 1,000 users. Please join our discord/telegram community to be added in the subsequent rollouts.') }>
               <Image src="/googleplay.svg" width={128} height={50} />
             </a>
           </Link>
