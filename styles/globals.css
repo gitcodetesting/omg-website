@@ -28,3 +28,17 @@ body {
   scroll-snap-align: center;
   width: 100%;
 }
+
+.swal2-popup {
+  background: rgba(255, 255, 255, 0.5) !important;
+  color: #000 !important;
+}
+
+.swal2-icon.swal2-warning {
+  border-color: #be4614 !important;
+  color: #be4614 !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #be4614 !important;
+}
