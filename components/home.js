@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
       <img className="absolute top-0 right-0 bottom-0 left-0 -z-10 w-full h-full object-cover" src="/video/index.jpg" autoPlay muted loop></img>
-      <div className="container md:pt-20 pt-60 px-5 mx-auto flex justify-end mt-5">
+      <div className="container h-full md:pt-20 pt-60 px-5 mx-auto flex justify-center md:justify-end items-end md:items-start pb-10 md:pb-0 mt-5">
         <div className="mr-2">
           <Link href="#">
             <a className="block" onClick={ e => Swal.fire({
